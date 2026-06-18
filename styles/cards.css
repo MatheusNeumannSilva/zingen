@@ -7,3 +7,12 @@
     margin-top: 1rem;
   }
 }
+
+[data-feature-card],
+[data-pricing-section] header > strong,
+[data-pricing-section] header > h2,
+[data-pricing-section] .cards > .card,
+[data-pricing-section] .premium {
+  transform-origin: center bottom;
+  will-change: transform, opacity;
+}
