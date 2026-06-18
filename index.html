@@ -11,7 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Rocker&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Scope+One&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
     <script src="scripts/sound-wave.js" defer></script>
+    <script src="scripts/section-reveal.js" defer></script>
   </head>
   <body>
     <header>
@@ -47,5 +56,40 @@
         </div>
       </div>
     </section>
+
+    <section id="smartphones-img">
+      <div class="container">
+        <img src="assets/App mockups.png" alt="" />
+      </div>
+    </section>
+
+    <section id="about" data-reveal-section>
+      <div class="container even-columns py-xl items-center">
+        <div class="section-copy">
+          <header>
+            <strong data-reveal="copy">Conheça o app</strong>
+            <h2 data-reveal="copy">
+              O aplicativo perfeito para aprender a cantar
+            </h2>
+          </header>
+          <p data-reveal="copy">
+            Nosso algoritmo de Inteligência Artificial permite remover a voz
+            original e manter as melodias das músicas. Dessa forma, temos o
+            maior repertório musical para Karaokê! Além disso, ao cantar, sua
+            voz e afinação é comparada pelo algoritmo permitindo uma avaliação
+            precisa da sua performance te ajudando a melhorar seu canto.
+          </p>
+        </div>
+        <div class="phone-showcase desktop-only" aria-hidden="true">
+          <img
+            class="phone-showcase__image"
+            data-phone-showcase
+            src="assets/App mockups.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
