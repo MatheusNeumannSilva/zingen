@@ -1,8 +1,17 @@
 #hero {
   text-align: center;
 
-  & img[src*="music"] {
+  & .sound-wave {
+    display: block;
+    margin-inline: auto;
     width: 12.875rem;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  & .sound-wave__svg {
+    height: auto;
+    overflow: visible;
   }
 
   & h1 {
@@ -27,7 +36,7 @@
       center/contain;
     padding-bottom: 15rem;
 
-    & img[src*="music"] {
+    & .sound-wave {
       width: 25.75rem;
     }
 
